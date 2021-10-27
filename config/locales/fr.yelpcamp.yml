@@ -1,3 +1,5 @@
 fr:
   title:
     welcome_yelpcamp: "Bienvenue sur YelpCamp"
+    button:
+      view_all_campgrounds: "Voir tous les terrains de camping"

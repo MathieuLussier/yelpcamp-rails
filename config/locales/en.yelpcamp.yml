@@ -1,3 +1,5 @@
 en:
   title:
     welcome_yelpcamp: "Welcome to YelpCamp"
+  button:
+    view_all_campgrounds: "View All Campgrounds"
