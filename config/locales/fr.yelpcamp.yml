@@ -1,5 +1,13 @@
 fr:
   title:
     welcome_yelpcamp: "Bienvenue sur YelpCamp"
-    button:
-      view_all_campgrounds: "Voir tous les terrains de camping"
+    view_all_our_campgrounds: "Découvrez nos campings triés sur le volet dans le monde entier."
+    campgrounds: "Terrains de camping"
+  button:
+    return_to_campgrounds: "Retour au terrains de camping"
+    view_all_campgrounds: "Voir tous les terrains de camping"
+    more_info: "Plus d'informations"
+  tooltip:
+    toggle_navigation: "Basculer la navigation"
+  defaults:
+    no_phone: "Pas de téléphone"

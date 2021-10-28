@@ -1,5 +1,13 @@
 en:
   title:
     welcome_yelpcamp: "Welcome to YelpCamp"
+    view_all_our_campgrounds: "View our hand-picked campgrounds from all over the world."
+    campgrounds: "Campgrounds"
   button:
+    return_to_campgrounds: "Return to campgrounds"
     view_all_campgrounds: "View All Campgrounds"
+    more_info: "More info"
+  tooltip:
+    toggle_navigation: "Toggle navigation"
+  defaults:
+    no_phone: "No phone"
