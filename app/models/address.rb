@@ -7,6 +7,6 @@ class Address < ActiveRecord::Base
   validates :country, presence: true, length: { minimum: 3, maximum: 50 }
   validates :zip_code, presence: true, length: { minimum: 3, maximum: 50 }
 
-  belongs_to :user, class_name: 'User', polymorphic: true
-  belongs_to :campground, class_name: 'Campground', polymorphic: true
+  has_many :user, class_name: 'User'
+  has_many :campground, class_name: 'Campground'
 end
