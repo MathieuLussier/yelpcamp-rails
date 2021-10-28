@@ -4,6 +4,7 @@ class CreateComments < ActiveRecord::Migration
       t.text :text, null: false
       t.references :user, null: false, index: true, foreign_key: true
       t.references :campground, null: false, index: true, foreign_key: true
+      t.references :parent, index: true, foreign_key: {to_table: :comments}
 
       t.timestamps
     end

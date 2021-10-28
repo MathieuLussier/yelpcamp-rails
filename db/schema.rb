@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20211028142704) do
     t.text     "text",          :null => false
     t.integer  "user_id",       :null => false
     t.integer  "campground_id", :null => false
+    t.integer  "parent_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end

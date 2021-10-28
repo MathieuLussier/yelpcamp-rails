@@ -61,3 +61,10 @@ comments = Comment.create([
                               campground_id: campgrounds.last.id
                             }
                           ])
+
+child_comment = Comment.create({
+                                 text: 'This is a child comment.',
+                                 user_id: users.first.id,
+                                 campground_id: campgrounds.first.id,
+                                 parent_id: comments.first.id
+                               })
