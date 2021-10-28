@@ -14,4 +14,8 @@ group :assets do
   gem "less-rails"
 end
 
+group :development do
+  gem 'debugger'
+end
+
 gem 'jquery-rails'
