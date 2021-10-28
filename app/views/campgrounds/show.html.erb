@@ -1,0 +1,26 @@
+<%= render "layouts/header" %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <p class="lead"><%= @campground.name %></p>
+
+      <ul class="list-group">
+        <li class="list-group-item"><%= @campground.user.email %></li>
+        <li class="list-group-item"><%= @campground.user.phone || t('defaults.no_phone') %></li>
+        <li class="list-group-item"><%= format_address(@campground.user.address) %></li>
+        <%= link_to t('button.return_to_campgrounds'), campgrounds_path, class: 'list-group-item list-group-item-action active' %>
+      </ul>
+    </div>
+
+    <div class="col-md-9">
+      <div class="card" style="width: 100%; padding: 5px;">
+        <img class="card-img-top img-fluid" src="https://media.discordapp.net/attachments/895251767065985036/899700191597309982/inconnu.jpeg?width=1072&height=508" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%= @campground.name %></h5>
+          <p class="card-text"><%= @campground.description %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

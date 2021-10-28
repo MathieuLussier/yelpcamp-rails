@@ -1,6 +1,6 @@
 <div id="landing-header">
   <h1><%= t('title.welcome_yelpcamp') %></h1>
-  <a href="#" class="btn btn-lg btn-success"><%= t('button.view_all_campgrounds') %></a>
+  <%= link_to t('button.view_all_campgrounds'), campgrounds_path, class: 'btn btn-lg btn-success' %>
 </div>
 
 <ul class="slideshow">

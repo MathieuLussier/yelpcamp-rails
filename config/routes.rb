@@ -1,5 +1,9 @@
 YelpcampRails::Application.routes.draw do
 
+    resources :campgrounds do
+      resources :comments
+    end
+
   root to: 'pages#landing'
   # The priority is based upon order of creation:
   # first created -> highest priority.

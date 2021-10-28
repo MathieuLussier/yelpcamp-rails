@@ -1,0 +1,27 @@
+<%= render "layouts/header" %>
+
+<div class="container">
+
+  <div class="h-100 p-5 m-2 text-white bg-secondary rounded-3 text-center">
+    <h1 class="display-4"><%= t('title.welcome_yelpcamp') %></h1>
+    <p class="lead"><%= t('title.view_all_our_campgrounds') %></p>
+    <%# if(typeof user != 'undefined'){ %>
+<!--      <a class="btn btn-primary btn-lg" href="#" data-toggle="modal" data-target="#modal-create-campground">add a new campground</a>-->
+      <%# } %>
+    </div>
+
+    <div class="row text-center">
+      <% @campgrounds.each do |campground| %>
+        <div class="card col-lg-3 col-md-6 mb-4 h-100">
+          <img class="card-img-top" src="https://media.discordapp.net/attachments/895251767065985036/899700191597309982/inconnu.jpeg?width=1072&height=508" alt="">
+          <div class="card-body">
+            <h5 class="card-title fs-6"><%= campground.name %></h5>
+          </div>
+          <div class="card-footer">
+            <%= link_to t('button.more_info'), campground, class: 'btn btn-primary' %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+</div>
