@@ -9,7 +9,7 @@ class CreateUsers < ActiveRecord::Migration
       t.text :phone
       t.boolean :active, null: false, default: false
 
-      t.references :address, null: false, index: true, foreign_key: true
+      t.references :address, index: true, foreign_key: true
 
       t.timestamps
     end

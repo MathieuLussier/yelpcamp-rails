@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20211028142704) do
     t.string   "image"
     t.float    "price"
     t.integer  "user_id",     :null => false
-    t.integer  "address_id",  :null => false
+    t.integer  "address_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20211028142704) do
     t.text     "description"
     t.text     "phone"
     t.boolean  "active",      :default => false, :null => false
-    t.integer  "address_id",                     :null => false
+    t.integer  "address_id"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
